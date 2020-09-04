@@ -9,12 +9,12 @@ int main() {
         array[i] = rand() % 100;
         std::cout << array[i] << " ";
     }
-    std::cout << std::endl << "\nAchman kargov     --->  ";
+    std::cout << std::endl << "\nSorted by incressing     --->  ";
     bubbleSort(array, 10, sizeof(int), compareInt1);
     for (int i = 0; i < 10; ++i) {
         std::cout << array[i] << " ";
     }
-    std::cout << std::endl <<"\nNvazman Kargov    --->  ";
+    std::cout << std::endl <<"\nSorted by decressing    --->  ";
     bubbleSort (array, 10, sizeof(int), compareInt2);
     for (int i = 0; i < 10; ++i) {
         std::cout << array[i] << " ";
@@ -25,13 +25,13 @@ int main() {
         std::cout << arr[i]<<" ";
     }
      bubbleSort (arr, 10, sizeof(char), compareChar1);
-     std::cout << std::endl << "\nAchman kargov     --->  ";
+     std::cout << std::endl << "\nSorted by incressing     --->  ";
      for (int i = 0; i < 10; ++i) {
             std::cout << arr[i]<<" ";
     }
     std::cout << std::endl;
     bubbleSort (arr, 10, sizeof(char), compareChar2);
-    std::cout << std::endl<<"Nvazman Kargov    --->  ";
+    std::cout << std::endl<<"Sorted by decressing    --->  ";
     for (int i = 0; i < 10; ++i) {
         std::cout << arr[i]<<" ";
     }
