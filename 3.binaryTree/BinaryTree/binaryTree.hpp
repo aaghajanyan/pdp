@@ -1,14 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   BinaryTree.h
- * Author: Albert
- */
-
 #ifndef BINARYTREE_H
 #define BINARYTREE_H
 
@@ -17,7 +6,7 @@ public:
     BinaryTree();
     BinaryTree(const BinaryTree& orig);
     virtual ~BinaryTree();
-    
+
     bool isEmpty();
     int size();
     int height();
@@ -25,19 +14,19 @@ public:
     void travers();
     bool find(int value);
     void balancedInsert(int value);
-    
+
 private:
     struct node {
         int data;
         node* left;
         node* right;
-        node(int value) 
+        node(int value)
             :data (value),
              left(nullptr),
              right(nullptr)
         { };
     };
-    node* root;   
+    node* root;
     node* copyTree(node* other);
     node* sortedInsert(node* root, node* newNode);
     void travers(node* start);
@@ -53,4 +42,3 @@ private:
 
 
 #endif /* BINARYTREE_H */
-

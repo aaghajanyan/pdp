@@ -147,10 +147,8 @@ void btree::preorder_print(node *leaf){
 }
 
 int main(){
-
     //btree tree;
     btree *tree = new btree();
-
     tree->insert(10);
     tree->insert(6);
     tree->insert(14);
@@ -167,5 +165,4 @@ int main(){
     tree->postorder_print();
 
     delete tree;
-
 }
